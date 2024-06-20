@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUIZINE</title>
+    <link rel="shortcut icon" href="../images/android-chrome-512x512.png" type="./assets.//x-icon" />
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+</head>
+<body>
+    <div id="nav">
+        <img src="../images/logo.png" alt="" />
+    </div>
+    <form action="/signup" method="post">
+        <div id="container">
+            <h1>sign up</h1>
+            <div id="name">
+                <h3>name</h3>
+                <input type="text" placeholder="name" name="name">
+            </div>
+            <div id="email">
+                <h3>email</h3>
+                <input type="email" placeholder="email" name="email">
+            </div>
+            <div id="PhoneNumber">
+                <h3>Phone (recommended)</h3>
+                <input type="number" placeholder="Ph. number" name="phoneNo">
+            </div>
+
+            <div id="password">
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" name="password">
+            </div>
+            <input type="submit" value="Create Account" id="signupbtn"> 
+            <div id="underline"></div>
+
+            <h4>already have an account? <a href="/login" id="register">log in</a></h4>
+
+            <script src="/javascripts/signup.js"></script>    
+        </div>
+    </form>
+</body>
+</html>

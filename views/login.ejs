@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUIZINE</title>
+    <link rel="shortcut icon" href="../images/android-chrome-512x512.png" type="./assets.//x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+
+<body>
+    <div id="nav">
+        <img src="../images/logo.png" alt="" />
+    </div>
+    <form method="post" action="/login">
+        <div id="container">
+            <h1>Log in</h1>
+            <div id="email">
+                <h3>email</h3>
+                <input type="email" placeholder="email" name="email" required>
+            </div>
+            <div id="password">
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <input type="submit" id="loginbtn" value="Log in now">
+
+            <span>Forget your password ?</span>
+            <div id="underline"></div>
+
+            <h3>or sign in with:</h3>
+
+            <div id="google">
+                <i class="ri-google-fill"></i>
+                <a href="">sign in with google</a>
+            </div>
+
+            <h4>Don't have an account? <a href="/signup" id="register">Register now</a></h>
+        </div>
+    </form>
+
+    <script src="../javascripts/login.js"></script>
+</body>
+
+</html>

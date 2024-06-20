@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUIZINE</title>
+    <!-- <link rel="shortcut icon" href="./favicon_io/android-chrome-512x512.png" type="./assets.//x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"> -->
+    <link
+      rel="shortcut icon"
+      href="../images/logo2.png"
+      type="./assets.//x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesheets/index.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="page1">
+        <div id="nav">
+          <div id="nav-part1">
+            <img src="../images/logo.png" alt="" />
+          </div>
+          <div id="nav-mid">
+              <a href="/menu">Menu</a>
+              <a href="/menu">for you</a>
+              <a href="/menu">resturants</a>
+          </div>
+          <div id="nav-part2">
+            <!-- <a href="./About/about.html">About</a>
+            <a href="#">Work</a>
+            <a href="#">Contact us</a> -->
+            <a href="#"><i class="ri-search-2-line" id="search1"></i></a>
+            <div id="innerSearch">
+              <input type="search" placeholder="Search" />
+              <i class="ri-search-2-line" id="search2"></i>
+            </div>
+            <a href="#" ><i class="ri-menu-line"></i></a>
+          </div>
+        </div>
+        <div id="full">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">orders</a>
+            
+            <!-- <a href="/login">Sign in</a> -->
+            <% if(user) {%>
+              <a href="/profile">welcome <%= user.name%></a>
+           <% } else { %>
+              <a href="/login">Sign in</a>
+          <% } %>
+            <i class="ri-close-line"></i>
+        </div>
+        <div id="center">
+        <div id="content">
+          <div id="text-content">
+            <div id="text">
+              <h1>Your Cravings, <br> Our Deliveries, <br> Anytime</h1>
+            </div>
+            <div id="button">
+              <h4><a href="/menu">Explore now</a></h4>
+            </div>
+          </div>
+          
+          <div id="img-coontent">
+            <img src="../images/plate.png" alt="">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div id="page2">
+        <div id="page4">
+          <div id="order">
+            <div id="imgorder">
+              <img src="../images/phone.png" alt="">
+            </div>
+            <h1>Easy to order</h1>
+            <p>From menu to doorstep in minutes: ordering made <br> fast and easy.</p>
+          </div>
+          <div id="delivery">
+            <div id="imgdlvry">
+              <img src="../images/shipping-fast-delivery-man-riding-600nw-1202545720.png" alt="">
+            </div>
+            <h1>Fastest delivery</h1>
+            <p>Blazing-fast delivery: Your hunger doesn't wait, and neither do we.</p>
+          </div>
+          <div id="quality">
+            <div id="qualitytag">
+              <i class="ri-award-fill"></i>
+            </div>
+            <h1>Best quality</h1>
+            <p>Exquisite quality: Every bite crafted with precision, satisfaction guaranteed.</p>
+          </div>  
+        </div>
+        <div id="div3">
+          <h1>our special dishes</h1>
+          <p>Delight in our chef's masterpieces, each special dish crafted with care, promising a memorable culinary experience</p>       
+        </div>
+        <div id="smallcards">
+          <div class="boxes">
+            <div id="box">
+              <div id="likenstar">
+                <i class="ri-heart-line"></i>  
+                <h2><i class="ri-star-fill"></i>4.5</h2>
+              </div>
+              <div id="photo">
+                <img src="../images/noodles.png" alt="">
+              </div>
+            </div>
+            <div id="texto">
+              <h3>Spicy Noodle with Shrimp and Veggies (8 pieces)</h3>
+              <div id="price">
+                <span> ₹150</span> 
+                <h4><a href="#">Buy now</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div id="box">
+              <div id="likenstar">
+                <i class="ri-heart-line"></i>  
+                <h2><i class="ri-star-fill"></i>4.5</h2>
+              </div>
+              <div id="photo">
+                <img src="../images/pizza.png" alt="">
+              </div>
+            </div>
+            <div id="texto">
+              <h3>Indulge in the fiery Margherita pizza sensation</h3>
+              <div id="price">
+                <span> ₹150</span> 
+                <h4><a href="#">Buy now</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div id="box">
+              <div id="likenstar">
+                <i class="ri-heart-line"></i>  
+                <h2><i class="ri-star-fill"></i>4.5</h2>
+              </div>
+              <div id="photo">
+                <img src="../images/burgers.png" alt="">
+              </div>
+            </div>
+            <div id="texto">
+              <h3>Unleash your taste buds with our cheesy indulgence.</h3>
+              <div id="price">
+                <span> ₹150</span> 
+                <h4><a href="/cart">Buy now</a></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="chef">
+          <div id="videodiv">
+            <video autoplay muted loop src="../images/chef.mp4"></video>
+          </div>
+          <div id="infos">
+            <h2>Health Food To live a <br> healthier life in the future</h2>
+            <p>Elevate your future with nutritious choices today. Embrace wholesome ingredients, balanced meals, and mindful eating to pave the way for a healthier tomorrow.</p>
+            <h4><a href="/menu">Explore now</a></h4>
+          </div>
+        </div>
+      </div>
+      <div id="page3">
+        <h1 id="hot">Hot 🔥 Picks</h1>
+        <div class="card">
+          <img
+            src="../images/kalyani-akella-vgTntT8PmIM-unsplash.jpg"
+            alt=""
+          />
+          <div id="cardmid">
+            <h1>Kadhai Paneer</h1>
+            <h5><i class="ri-star-fill"></i> 4.4</h5>
+          </div>
+          <div id="card-down">
+            <h5>₹ <span>300</span> ₹ 289 </h5>
+            <h4><a href="#">Buy now</a></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../images/biryani.jpg"
+            alt=""
+          />
+          <div id="cardmid">
+            <h1>veg biryani</h1>
+            <h5><i class="ri-star-fill"></i> 4.4</h5>
+          </div>
+          <div id="card-down">
+            <h5>₹ <span>300</span> 289 </h5>
+            <h4><a href="#">Buy now</a></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../images/julab jamun.jpg"
+            alt=""
+          />
+          <div id="cardmid">
+            <h1>julaab jamun</h1>
+            <h5><i class="ri-star-fill"></i> 4.4</h5>
+          </div>
+          <div id="card-down">
+            <h5>₹ <span>300</span> 289 </h5>
+            <h4><a href="#">Buy now</a></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../images/palak paneer.jpg"
+            alt=""
+          />
+          <div id="cardmid">
+            <h1>Palak Paneer</h1>
+            <h5><i class="ri-star-fill"></i> 4.4</h5>
+          </div>
+          <div id="card-down">
+            <h5>₹ <span>300</span> 289 </h5>
+            <h4><a href="#">Buy now</a></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../images/kalyani-akella-vgTntT8PmIM-unsplash.jpg"
+            alt=""
+          />
+          <div id="cardmid">
+            <h1>Kadhai Paneer</h1>
+            <h5><i class="ri-star-fill"></i> 4.4</h5>
+          </div>
+          <div id="card-down">
+            <h5>₹ <span>300</span> 289 </h5>
+            <h4><a href="#">Buy now</a></h4>
+          </div>
+        </div>
+        
+      </div>      
+      <div id="page5">
+        <div id="imgdiv">
+          <img src="../images/pexels-roberto-hund-5358099.jpg" alt="">
+        </div>
+        <div id="customercntnt">
+          <h1>our lovely customers loves our food</h1>
+          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellendus repudiandae doloribus saepe, ullam molestiae sapiente facilis provident consequatur voluptatem, dolore obcaecati sequi"</p>
+          <div id="star">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <h4>Courtney Henry</h4>
+        </div>
+        
+      </div>
+      <div id="AboutUs">
+        <img src="../images/logo.png" alt="">
+        <h1>We are social</h1>
+        <p>Lots of content is waiting for you on our social pages</p>
+        <div id="socials">
+          <div id="facebook"><i class="ri-facebook-fill"></i></div>
+          <div id="instagram"><i class="ri-instagram-fill"></i></div>
+          <div id="linkedin"><i class="ri-linkedin-fill"></i></div>
+          <div id="twitter"><i class="ri-twitter-x-fill"></i></div>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="website">
+          <h2>CUIZINE</h2>
+          <p>Where every click leads to delicious discoveries online.</p>
+        </div>
+        <div id="support">
+          <h3>Support</h3>
+          <a href="">Account</a>
+          <a href="">support center</a>
+          <a href="">Feedback</a>
+          <a href="">Acceblity</a>
+        </div>
+        <div id="menu">
+          <h3>Our Menu</h3>
+          <a href="">Special</a>
+          <a href="">Popular</a>
+          <a href="">categories</a>
+        </div>
+        <div id="GetinTouch">
+          <h3>Get in Touch</h3>
+          <a href="">Hellocuzine@gmail.com</a>
+          <p>Jaipur, Rajsthan</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="../javascripts/index.js"></script>
+  </body>
+</html>

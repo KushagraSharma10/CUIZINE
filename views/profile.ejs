@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUIZINE</title>
+    <link rel="shortcut icon" href="../images/android-chrome-512x512.png" type="./assets.//x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+</head>
+
+<body>
+    <div id="nav">
+        <img src="../images/logo.png" alt="" />
+    </div>
+    <input id="logout" type="text" value="Logout">
+    <div class="main">
+        <form method="post" action="/profile">
+            
+            <div id="container">
+                <h1><%= user.name%></h1>
+                <div id="firstline">
+                    <div id="name">
+                        <h3>Name</h3>
+                        <input type="text" placeholder="name" name="name" required>     
+                    </div>
+                    <div id="email">
+                        <h3>email</h3>
+                        <input type="email" placeholder="email" name="email" readonly>
+                    </div>
+                </div>
+                <div id="secondline">
+                    <div id="phoneNo">
+                        <h3>Contact Number</h3>
+                        <input type="number"  placeholder="phoneNo" name="phoneNo" value="" required> 
+                    </div>
+                    <div id="city">
+                        <h3>City </h3>
+                        <input type="text"  placeholder="city" name="city" > 
+                    </div>
+                </div>
+                <input id="update" type="submit" value="Update details">
+            </div>
+        </form>
+    </div>
+    
+
+    <script src="../javascripts/profile.js"></script>
+</body>
+
+</html>
